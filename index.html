@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Woodhaven Furniture – Crafted for Living</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="index.html" class="logo">Wood<span>haven</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="catalog.html">Catalog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html" class="nav-cta">Visit Showroom</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <button class="cart-btn" onclick="showToast('🛒 Cart feature coming soon!')">
+    🛒 Cart <span class="cart-count" id="cartCount">0</span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grain"></div>
+  <div class="hero-text">
+    <span class="hero-badge">✦ Trusted Since 2005</span>
+    <h1 class="hero-title">
+      Furniture That Feels
+      <em>Like Home</em>
+    </h1>
+    <p class="hero-sub">
+      Handcrafted pieces for every room. We bring warmth, character,
+      and timeless style to living spaces across the city.
+    </p>
+    <div class="hero-btns">
+      <a href="catalog.html" class="btn-primary">Explore Collection</a>
+      <a href="contact.html" class="btn-secondary">Visit Showroom</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">500+</div><div class="stat-label">Products</div></div>
+      <div><div class="stat-num">12K+</div><div class="stat-label">Happy Customers</div></div>
+      <div><div class="stat-num">20yr</div><div class="stat-label">Experience</div></div>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80" alt="Beautiful living room furniture"/>
+    <div class="hero-img-badge">
+      <strong>Free Delivery</strong>
+      On orders above ₹25,000
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <span class="marquee-item">Living Room ✦</span>
+    <span class="marquee-item">Bedroom Sets ✦</span>
+    <span class="marquee-item">Dining Furniture ✦</span>
+    <span class="marquee-item">Free Delivery ✦</span>
+    <span class="marquee-item">Custom Orders ✦</span>
+    <span class="marquee-item">EMI Available ✦</span>
+    <span class="marquee-item">5-Year Warranty ✦</span>
+    <span class="marquee-item">Living Room ✦</span>
+    <span class="marquee-item">Bedroom Sets ✦</span>
+    <span class="marquee-item">Dining Furniture ✦</span>
+    <span class="marquee-item">Free Delivery ✦</span>
+    <span class="marquee-item">Custom Orders ✦</span>
+    <span class="marquee-item">EMI Available ✦</span>
+    <span class="marquee-item">5-Year Warranty ✦</span>
+  </div>
+</div>
+
+<!-- FEATURED PRODUCTS -->
+<section id="catalog-home">
+  <div class="reveal">
+    <div class="section-label">Featured Products</div>
+    <h2 class="section-title">Our Bestsellers</h2>
+    <p class="section-sub">Handpicked favourites loved by thousands of happy customers.</p>
+  </div>
+  <div class="cat-tabs reveal">
+    <button class="cat-tab active" onclick="filterCat('all', this)">All</button>
+    <button class="cat-tab" onclick="filterCat('living', this)">Living Room</button>
+    <button class="cat-tab" onclick="filterCat('bedroom', this)">Bedroom</button>
+    <button class="cat-tab" onclick="filterCat('dining', this)">Dining & Kitchen</button>
+  </div>
+  <div class="products-grid reveal" id="homeGrid"></div>
+  <div style="text-align:center; margin-top:3rem;" class="reveal">
+    <a href="catalog.html" class="btn-primary">View Full Catalog →</a>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="about-preview">
+  <div class="reveal" style="text-align:center; max-width:700px; margin:0 auto 3rem;">
+    <div class="section-label">Why Choose Us</div>
+    <h2 class="section-title">Built on Trust & Craftsmanship</h2>
+  </div>
+  <div class="features-grid reveal">
+    <div class="feature-box"><div class="feat-icon-lg">🪵</div><h3>Sustainably Sourced</h3><p>Ethically sourced timber from certified forests. Quality you can feel.</p></div>
+    <div class="feature-box"><div class="feat-icon-lg">🔨</div><h3>Master Craftsmen</h3><p>Built by artisans with 10–25 years of traditional joinery experience.</p></div>
+    <div class="feature-box"><div class="feat-icon-lg">🚚</div><h3>White-Glove Delivery</h3><p>We deliver, assemble, and place your furniture — at no extra charge.</p></div>
+    <div class="feature-box"><div class="feat-icon-lg">🛡️</div><h3>5-Year Warranty</h3><p>Every product comes with a full 5-year structural warranty.</p></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto 3rem;">
+    <div class="section-label">Customer Love</div>
+    <h2 class="section-title">What Our Customers Say</h2>
+  </div>
+  <div class="testimonials-grid reveal" id="testiGrid"></div>
+</section>
+
+<!-- FOOTER -->
+<div id="footer-placeholder"></div>
+<div class="toast" id="toast"></div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Render products
+  renderProducts('homeGrid', products);
+  // Render testimonials
+  renderTestimonials('testiGrid', testimonials);
+  // Load footer
+  loadFooter();
+</script>
+</body>
+</html>

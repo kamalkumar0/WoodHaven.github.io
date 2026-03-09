@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catalog – Woodhaven Furniture</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="logo">Wood<span>haven</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="catalog.html" class="active">Catalog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html" class="nav-cta">Visit Showroom</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <button class="cart-btn" onclick="showToast('🛒 Cart feature coming soon!')">
+    🛒 Cart <span class="cart-count" id="cartCount">0</span>
+  </button>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-content reveal">
+    <div class="section-label">Our Collection</div>
+    <h1 class="section-title">Browse All Products</h1>
+    <p class="section-sub">Every piece crafted with care, built to last a lifetime.</p>
+  </div>
+</div>
+
+<section id="catalog-page">
+  <div class="cat-tabs reveal">
+    <button class="cat-tab active" onclick="filterCat('all', this)">All Products</button>
+    <button class="cat-tab" onclick="filterCat('living', this)">Living Room</button>
+    <button class="cat-tab" onclick="filterCat('bedroom', this)">Bedroom</button>
+    <button class="cat-tab" onclick="filterCat('dining', this)">Dining & Kitchen</button>
+  </div>
+  <div class="products-grid reveal" id="catalogGrid"></div>
+</section>
+
+<div id="footer-placeholder"></div>
+<div class="toast" id="toast"></div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  renderProducts('catalogGrid', products);
+  loadFooter();
+</script>
+</body>
+</html>

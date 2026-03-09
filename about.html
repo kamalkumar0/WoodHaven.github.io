@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us – Woodhaven Furniture</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="logo">Wood<span>haven</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="catalog.html">Catalog</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html" class="nav-cta">Visit Showroom</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <button class="cart-btn" onclick="showToast('🛒 Cart feature coming soon!')">
+    🛒 Cart <span class="cart-count" id="cartCount">0</span>
+  </button>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-content reveal">
+    <div class="section-label">Our Story</div>
+    <h1 class="section-title">Two Decades of Crafted Living</h1>
+    <p class="section-sub">A family business rooted in quality, honesty, and love for fine wood.</p>
+  </div>
+</div>
+
+<section id="about">
+  <div class="reveal">
+    <div class="section-label">Who We Are</div>
+    <h2 class="section-title">The Woodhaven Story</h2>
+    <p class="section-sub">
+      Woodhaven was born from a simple belief — that the right furniture transforms a house into a home.
+      Since 2005, we've sourced, crafted, and delivered thousands of pieces to families who trust us with their most personal spaces.
+    </p>
+    <div class="about-features">
+      <div class="about-feature">
+        <div class="feat-icon">🪵</div>
+        <div class="feat-text">
+          <h4>Sustainably Sourced Wood</h4>
+          <p>All our timber is ethically sourced from certified forests. Quality you can feel, responsibility you can trust.</p>
+        </div>
+      </div>
+      <div class="about-feature">
+        <div class="feat-icon">🔨</div>
+        <div class="feat-text">
+          <h4>Master Craftsmen</h4>
+          <p>Every piece is built by skilled artisans with 10–25 years of experience in traditional joinery and finishing.</p>
+        </div>
+      </div>
+      <div class="about-feature">
+        <div class="feat-icon">🚚</div>
+        <div class="feat-text">
+          <h4>White-Glove Delivery</h4>
+          <p>We deliver, assemble, and place your furniture exactly where you want it — at no extra charge above ₹25,000.</p>
+        </div>
+      </div>
+      <div class="about-feature">
+        <div class="feat-icon">🛡️</div>
+        <div class="feat-text">
+          <h4>5-Year Warranty</h4>
+          <p>Every product comes with a 5-year structural warranty. We stand behind every nail, joint, and finish.</p>
+        </div>
+      </div>
+    </div>
+    <a href="contact.html" class="btn-primary">Visit Our Showroom →</a>
+  </div>
+  <div class="about-image-wrap reveal">
+    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&q=80" alt="Our showroom"/>
+    <div class="about-years">
+      <span class="num">20</span>
+      <span class="lbl">Years of Trust</span>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<div class="toast" id="toast"></div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>loadFooter();</script>
+</body>
+</html>
