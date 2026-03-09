@@ -151,8 +151,8 @@ Edit the contact details directly in `contact.html` — address, phone, email, a
 
 ## 👨‍💻 Built By
 
-**Kamal Sharma**
-B.Tech CSE | Web Developer | Content Creator
+**Kamal Kumar**
+B.Tech CSE | AI Developer | Web Developer | Content Creator
 
 ---
 
