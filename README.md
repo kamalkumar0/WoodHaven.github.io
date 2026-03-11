@@ -20,7 +20,7 @@ woodhaven-static/
 │
 └── js/
     ├── data.js         → All product & testimonial data
-    └── main.js         → All JavaScript logic (filter, cart, toast, etc.)
+    └── main.js         → All JavaScript logic (filter, cart, toast, etc. )
 ```
 
 ---
